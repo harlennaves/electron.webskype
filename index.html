@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>skype Web</title>
+    <script>
+       function winResize() {
+	  var elem = document.getElementById('content');
+	  if (elem == null) return;
+          var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+	  elem.style.height = height + 'px';
+       }
+    </script>
+  </head>
+  <body style="margin:0px;padding:0px" onresize="winResize()" onload="winResize()">
+        <webview id="content" src="https://web.skype.com/en/" autosize="on"  useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36 Edge/14.14393"></webview>
+
+  </body>
+</html>

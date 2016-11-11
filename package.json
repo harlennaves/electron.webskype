@@ -1,0 +1,5 @@
+{
+  "name"    : "Skype Web",
+  "version" : "0.1.0",
+  "main"    : "skype.js"
+}
